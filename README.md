@@ -29,14 +29,13 @@ Una aplicación Android moderna para coleccionistas de videojuegos, con autentic
 - **Añadir juegos** con todos los detalles
 - **Edición flexible** de cualquier campo
 - **Eliminación segura** con confirmación
-- **Visualización detallada** de cada juego
+- **Visualización** de cada juego
 
 ### 🔍 Búsqueda Inteligente
 ![Búsqueda](images/gv-6.png)
 
 - Filtrado en tiempo real mientras escribes
-- Combinación de múltiples filtros (género, plataforma)
-- Historial de búsquedas recientes
+- Combinación de múltiples filtros por género
 
 ## 🎨 Galería de la Aplicación
 
