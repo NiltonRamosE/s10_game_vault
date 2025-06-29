@@ -3,6 +3,7 @@ package com.example.app_s10
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -51,7 +52,7 @@ class MainActivity : AppCompatActivity() {
         // Configurar UI
         setupUI()
         setupWindowInsets()
-        
+        setupGameFeatures()
         // Cargar información del usuario
         loadUserInfo(currentUser)
         
@@ -185,7 +186,28 @@ class MainActivity : AppCompatActivity() {
             .setIcon(android.R.drawable.ic_dialog_info)
             .show()
     }
-    
+
+    // Agregar en MainActivity.kt
+    private fun setupGameFeatures() {
+        try {
+            val btnAddGame = findViewById<CardView>(R.id.btnAddGame)
+            btnAddGame.setOnClickListener {
+                startActivity(Intent(this, AddGameActivity::class.java))
+            }
+
+            // Botón para ver juegos (también es CardView)
+            val btnViewGames = findViewById<CardView>(R.id.btnViewGames)
+            btnViewGames.setOnClickListener {
+                startActivity(Intent(this, GamesListActivity::class.java))
+            }
+
+            Log.d(TAG, "Game features setup completed successfully")
+        } catch (e: Exception) {
+            Log.e(TAG, "Error setting up game features", e)
+            Toast.makeText(this, "Error initializing game features", Toast.LENGTH_SHORT).show()
+        }
+    }
+
     override fun onStart() {
         super.onStart()
         // Verificar autenticación cada vez que la actividad se vuelve visible

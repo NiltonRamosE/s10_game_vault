@@ -50,6 +50,8 @@
     <string name="achievements">Logros</string>
     <string name="settings">Configuración</string>
     <string name="profile">Perfil</string>
+    <string name="addGame">Registrar Juego</string>
+    <string name="listGames">Ver Lista de Juegos</string>
     
     <!-- Mensajes generales -->
     <string name="ok">OK</string>

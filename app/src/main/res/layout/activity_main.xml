@@ -82,7 +82,7 @@
                 android:id="@+id/btn_logout"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="50dp"
                 android:text="@string/btn_logout"
                 android:textColor="@color/gaming_red"
                 android:textSize="12sp"
@@ -153,7 +153,7 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:src="@drawable/ic_gaming_controller"
-                            android:tint="@color/gaming_neon_green" />
+                            app:tint="@color/gaming_neon_green" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -190,7 +190,7 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:src="@drawable/ic_gaming_controller"
-                            android:tint="@color/gaming_highlight" />
+                            app:tint="@color/gaming_highlight" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -227,7 +227,7 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:src="@drawable/ic_gaming_controller"
-                            android:tint="@color/gaming_purple" />
+                            app:tint="@color/gaming_purple" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -264,7 +264,7 @@
                             android:layout_width="32dp"
                             android:layout_height="32dp"
                             android:src="@drawable/ic_gaming_controller"
-                            android:tint="@color/gaming_cyan" />
+                            app:tint="@color/gaming_cyan" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -280,6 +280,79 @@
 
                 </androidx.cardview.widget.CardView>
 
+                <!-- Registrar Juego -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btnAddGame"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_columnWeight="1"
+                    app:cardBackgroundColor="@color/gaming_surface"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_gaming_controller"
+                            app:tint="@color/gaming_red" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/addGame"
+                            android:textColor="@color/gaming_text_primary"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- Lista de Juegos -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btnViewGames"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_columnWeight="1"
+                    app:cardBackgroundColor="@color/gaming_surface"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_gaming_controller"
+                            app:tint="@color/gaming_pink" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/listGames"
+                            android:textColor="@color/gaming_text_primary"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
             </GridLayout>
 
             <!-- Mensaje de bienvenida adicional -->
